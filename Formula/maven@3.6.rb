@@ -5,10 +5,8 @@ class MavenAT36 < Formula
     mirror "https://archive.apache.org/dist/maven/maven-3/3.6.3/binaries/apache-maven-3.6.3-bin.tar.gz"
     sha256 "26ad91d751b3a9a53087aefa743f4e16a17741d3915b219cf74112bf87a438c5"
     license "Apache-2.0"
-    revision 1
-  
-    bottle :unneeded
-  
+    revision 2
+    
     keg_only :versioned_formula
   
     # 3.1+ are not EOL yet, 3.6.X is in widespread use: https://maven.apache.org/docs/history.html
