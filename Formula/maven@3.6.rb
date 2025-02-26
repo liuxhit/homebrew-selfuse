@@ -12,7 +12,9 @@ class MavenAT36 < Formula
     # 3.1+ are not EOL yet, 3.6.X is in widespread use: https://maven.apache.org/docs/history.html
   
     depends_on "openjdk"
-  
+
+    conflicts_with "mvnvm", because: "also installs a 'mvn' executable"
+
     def install
       # Remove windows files
       rm_f Dir["bin/*.cmd"]
